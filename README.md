@@ -26,9 +26,9 @@ This JSON console formatter is heavily based on https://github.com/dotnet/runtim
 
 However, due to the class being internal and some of it's dependencies being internal as well, I had to copy a lot of code from the original class to make it work.
 
-this includes copying the `PooledByteBufferWriter` class and it's dependency `ArrayBuffer` class.
+this includes copying the internal [`PooledByteBufferWriter`](https://github.com/dotnet/runtime/blob/main/src/libraries/Common/src/System/Text/Json/PooledByteBufferWriter.cs) class and its dependency [`ArrayBuffer`](https://github.com/dotnet/runtime/blob/main/src/libraries/Common/src/System/Net/ArrayBuffer.cs) classes.
 
-**Ideally** - the `JsonConsoleFormatter` class would be public and expose virtual methods to allow customizing of the json format.
+**Ideally** - the [`JsonConsoleFormatter`](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging.Console/src/JsonConsoleFormatter.cs) class would be public and expose virtual methods to allow customizing of the json format.
 
 example:
 
