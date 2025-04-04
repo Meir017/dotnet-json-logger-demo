@@ -28,6 +28,8 @@ However, due to the class being internal and some of it's dependencies being int
 
 this includes copying the internal [`PooledByteBufferWriter`](https://github.com/dotnet/runtime/blob/main/src/libraries/Common/src/System/Text/Json/PooledByteBufferWriter.cs) class and its dependency [`ArrayBuffer`](https://github.com/dotnet/runtime/blob/main/src/libraries/Common/src/System/Net/ArrayBuffer.cs) classes.
 
+see the diff - [`JsonConsoleFormatter.cs.diff`](./JsonConsoleFormatter.cs.diff)
+
 **Ideally** - the [`JsonConsoleFormatter`](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Logging.Console/src/JsonConsoleFormatter.cs) class would be public and expose virtual methods to allow customizing of the json format.
 
 example:
