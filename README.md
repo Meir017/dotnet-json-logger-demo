@@ -3,6 +3,8 @@
 Custom JSON console formatter that formats logs in a more readable way.
 It formats the entire log message as a JSON object, without nested objects for `State` or `Scopes`.
 
+created for the discussion https://github.com/dotnet/runtime/issues/104409
+
 *An assumption is made that there are no duplicate keys in the log message's state and scopes.*
 
 Sample output:
