@@ -1,0 +1,6 @@
+@dotnet_json_logger_demo_HostAddress = http://localhost:5113
+
+GET {{dotnet_json_logger_demo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
