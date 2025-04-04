@@ -119,6 +119,8 @@ private static string? ToInvariantString(...) { ... }
 
 suggested code:
 
+extract the JSON writing to a virtual method `WriteJsonObject` and make it's dependencies protected virtual as well.
+
 ```cs
 private void WriteInternal(IExternalScopeProvider? scopeProvider, TextWriter textWriter, string? message, LogLevel logLevel,
             string category, int eventId, string? exception, bool hasState, string? stateMessage, IReadOnlyList<KeyValuePair<string, object?>>? stateProperties,
